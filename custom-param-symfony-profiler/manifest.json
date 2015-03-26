@@ -1,0 +1,26 @@
+{
+  "name": "custom-param-symfony-profiler",
+  "description": "Enable Custom Params To append to Symfony profiler",
+  "version": "1.1",
+  "manifest_version": 2,
+  "default_locale": "en",
+  "permissions": [ "http://*/*", "https://*/*", "tabs" ],
+  "background": {
+    "scripts": ["scripts/index.js"],
+    "persistent": false
+  },
+  "content_scripts": [ {
+    "all_frames": true,
+    "js": [ "scripts/index.js" ],
+    "matches": [ "http://*/*", "https://*/*" ],
+    "run_at": "document_end"
+  } ],
+  "background": {
+      "scripts": ["scripts/background.js"]
+  },
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "homepage_url" : "https://github.com/devzer01/custom-param-symfony-profiler"
+}

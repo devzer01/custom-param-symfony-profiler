@@ -1,10 +1,10 @@
 {
     "appName": {
-        "message": "cloudforcehr",
+        "message": "custom-param-symfony-profiler",
         "description": "The name of the application"
     },
     "appDescription": {
-        "message": "Enable to Use Cloud Force Hr from chrome",
+        "message": "Allows customs params to be passed to symfony profiler",
         "description": "The description of the application"
     }
 }
